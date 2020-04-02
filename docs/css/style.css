@@ -1,17 +1,14 @@
-/* Fonts used for this project */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
-
-/* General style */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
-/* Body styles */
 body {
   background-color: #062863;
 }
@@ -28,53 +25,58 @@ body p {
 }
 
 body main {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: auto;
 }
 
-/* This is the style for the logo */
-.logo {
+body main .logo {
   content: url(https://res.cloudinary.com/dpkreativ/image/upload/v1585749043/piggyvest/piggyvest-logo_fa3iou.svg);
   margin: auto;
   margin-top: 40px;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
   grid-column: 5/9;
 }
 
-/* These are all the styles for the form */
-.form-wrapper {
+body main .form-wrapper {
   margin: 2.5rem 0;
   padding: 2.5rem;
   border-radius: 1.25rem 1.25rem 1.25rem 0;
   background-color: #fff;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
   grid-row: 2/3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
   grid-column: 5/9;
 }
 
-.form-title {
+body main .form-wrapper .form-title {
   text-align: center;
 }
 
-h1 {
+body main .form-wrapper .form-title h1 {
   color: #083e9e;
   font-size: 24px;
 }
 
-p {
+body main .form-wrapper .form-title p {
   color: #4a5568;
 }
 
-form {
+body main .form-wrapper .form-content form {
   margin-top: 2rem;
 }
 
-label {
+body main .form-wrapper .form-content form label {
   font-size: 0.75rem;
   font-weight: 700;
   color: #4a5568;
 }
 
-input {
+body main .form-wrapper .form-content form input {
   margin-top: 0.25rem;
   margin-bottom: 2rem;
   width: 100%;
@@ -83,29 +85,45 @@ input {
   border: none;
 }
 
-input::placeholder {
+body main .form-wrapper .form-content form input::-webkit-input-placeholder {
   font-family: "Karla", sans-serif;
   color: #9ca7ac;
 }
 
-input.submit {
+body main .form-wrapper .form-content form input:-ms-input-placeholder {
+  font-family: "Karla", sans-serif;
+  color: #9ca7ac;
+}
+
+body main .form-wrapper .form-content form input::-ms-input-placeholder {
+  font-family: "Karla", sans-serif;
+  color: #9ca7ac;
+}
+
+body main .form-wrapper .form-content form input::placeholder {
+  font-family: "Karla", sans-serif;
+  color: #9ca7ac;
+}
+
+body main .form-wrapper .form-content form input.submit {
   background-color: #083e9e;
   color: #fff;
   border-radius: 1.25rem 1.25rem 1.25rem 0;
   font-weight: 700;
 }
 
-input.submit:hover {
+body main .form-wrapper .form-content form input.submit:hover {
   background-color: #062863;
   cursor: pointer;
 }
 
-.login-link {
+body main .login-link {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
   grid-row: 3/4;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
   grid-column: 5/9;
   margin-bottom: 2rem;
 }
-
-.login-link > a > p {
-  color: #fff;
-}
+/*# sourceMappingURL=style.css.map */
