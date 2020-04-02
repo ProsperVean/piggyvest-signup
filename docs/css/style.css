@@ -28,12 +28,9 @@ body p {
 }
 
 body main {
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: auto;
-  min-width: 300px;
-  position: absolute;
 }
 
 /* This is the style for the logo */
@@ -52,6 +49,7 @@ body main {
   background-color: #fff;
   grid-row: 2/3;
   grid-column: 5/9;
+  min-width: 300px;
 }
 
 .form-title {
