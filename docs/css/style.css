@@ -45,7 +45,6 @@ body main {
 .form-wrapper {
   margin: 2.5rem 2rem;
   padding: 2.5rem;
-  margin: auto;
   border-radius: 1.25rem 1.25rem 1.25rem 0;
   background-color: #fff;
   grid-row: 2/3;
