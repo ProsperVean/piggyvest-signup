@@ -29,7 +29,7 @@ body p {
 
 body main {
   display: grid;
-  grid-template-columns: repeat(12, auto);
+  grid-template-columns: repeat(12, 1fr);
   position: relative;
 }
 
@@ -43,7 +43,7 @@ body main {
 
 /* These are all the styles for the form */
 .form-wrapper {
-  margin: 2.5rem 0;
+  margin: 2.5rem 2rem;
   padding: 2.5rem;
   margin: auto;
   border-radius: 1.25rem 1.25rem 1.25rem 0;
@@ -107,8 +107,6 @@ input.submit:hover {
   grid-row: 3/4;
   grid-column: 5/9;
   margin-bottom: 2rem;
-  margin: auto;
-  position: absolute;
 }
 
 .login-link > a > p {
