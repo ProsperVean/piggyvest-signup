@@ -30,7 +30,6 @@ body p {
 body main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: auto;
   position: relative;
 }
 
@@ -46,6 +45,7 @@ body main {
 .form-wrapper {
   margin: 2.5rem 0;
   padding: 2.5rem;
+  margin: auto;
   border-radius: 1.25rem 1.25rem 1.25rem 0;
   background-color: #fff;
   grid-row: 2/3;
@@ -107,6 +107,8 @@ input.submit:hover {
   grid-row: 3/4;
   grid-column: 5/9;
   margin-bottom: 2rem;
+  margin: auto;
+  position: absolute;
 }
 
 .login-link > a > p {
