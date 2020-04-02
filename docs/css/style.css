@@ -28,9 +28,12 @@ body p {
 }
 
 body main {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  position: relative;
+  margin: auto;
+  min-width: 300px;
+  position: absolute;
 }
 
 /* This is the style for the logo */
@@ -43,14 +46,12 @@ body main {
 
 /* These are all the styles for the form */
 .form-wrapper {
-  margin: 2.5rem 2rem;
+  margin: 2.5rem 0;
   padding: 2.5rem;
   border-radius: 1.25rem 1.25rem 1.25rem 0;
   background-color: #fff;
   grid-row: 2/3;
   grid-column: 5/9;
-  min-width: 300px;
-  position: absolute;
 }
 
 .form-title {
