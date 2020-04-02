@@ -32,6 +32,8 @@ body main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: auto;
+  min-width: 300px;
+  position: absolute;
 }
 
 /* This is the style for the logo */
